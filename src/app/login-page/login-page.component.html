@@ -1,0 +1,91 @@
+<div class="global">
+    <body>
+    <div class="container Regular shadow">
+        
+        <div class="cover"> 
+            <div class="front">
+                <div class="buttonBox " style="position:absolute ; z-index:700;margin-top: 60%; margin-left: x;">    <button class="btn Register Regular shadow"   (click)="OnSubmitForm()" >Register</button>
+                </div>
+                
+                <img src="/assets/img/login1.png" alt=""> </div> 
+
+            </div>
+    
+        
+    
+        <form action="" class="form-control" [formGroup]="loginform">
+           <div class="form-content">
+            <div class="login-form">
+                <div class="title">
+                    AlloAcademy TN
+                </div>
+    
+           
+            <div class="input-boxes">
+                <div class="input-box">
+                    
+                    <input type="text" placeholder="Phone number or email" formControlName="email" name="uname" ><br>
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['email'].errors " >
+                    username empty !
+                 </div>
+    
+                
+                <div class="input-box">
+                    <input type="password" placeholder=" Password" formControlName="password" name="psw" ><br>
+                </div>
+                    <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['password'].errors " >
+                        password empty !
+                     </div>
+
+    
+               
+                
+        
+        
+                
+               
+    
+            </div>
+            
+
+            <div class="buttonBox" style="margin-top:10%">    <button class="btn Regular shadow"   (click)="OnSubmitForm()" >Login</button>
+            </div>
+            <div class="text" style="margin-top: 0%; margin-left: 13%;">  <a href="">Forgot password?</a>  </div>
+            <div class="text hide" style=" margin-left: 13%;">  <a href="">Don't have account? <span style="color: #2DA4DD;">Register now</span> </a>  </div>
+
+           </div>
+
+           
+        </div>
+
+        
+           
+        </form>
+        
+
+        
+            
+            
+            
+            
+        </div>
+    
+       
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</div>
+
+ 

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+  font-family:'Roboto Condensed', sans-serif ;
+}
+body{
+  
+    background: #F0F2EF;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+img{
+    max-width: 100%;
+    object-fit: cover;
+
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: end;
+    
+}
+h1,p{
+    margin: 0;
+}
+.line {
+display: flex;
+    width: 100%;
+    
+
+}
+.container{
+    max-width: 90%;
+    margin: 0;
+}
+
+header {
+    align-items:flex-end;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 1.5em 0;
+    
+
+
+}
+.logo{
+    
+   
+    margin-left: 3%;
+}
+.logo img{
+    max-width:70px ;
+    cursor: pointer;
+    
+    
+
+}
+nav ul {
+    gap: 2em;
+    align-items: center;
+}
+nav a{
+    font-weight: 500;
+    font-size: 18px;
+   
+}
+/* hero */
+.hero{
+gap: 2em;
+flex-wrap: wrap-reverse;
+align-items: center;
+min-height:630px ;
+}
+.hero>*{
+    flex: 1 1 25em;
+}
+.hero h1{
+    font-weight: 1000; 
+    font-size: clamp(50px , 5vw , 70px);
+    color: #F3BB21;
+    line-height: 1;
+    cursor: pointer;
+ }
+.hero p{
+    font-weight:500 ;
+    font-size: 30px;
+    padding: 1em 0;
+}
+.hero a{
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0.3em 1em;
+}
+.hero-img{
+    
+    
+    width: 60%;
+    position: absolute;
+    margin-left: 50%;
+    
+    
+
+    
+    
+}
+.hero-content{
+    margin-top: -35%;
+    
+    display: flex;
+    
+    
+    position: relative;
+
+}
+.left{
+    
+    width: 40%;
+    padding-left: 40px;
+    position: absolute;
+    
+    
+    justify-content: right;
+    
+
+}
+.hero-btn{
+    border-width: 4px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    
+    cursor: pointer;
+    width: 40%;
+    background-color: #2DA4DD;
+    
+    color: #fff;
+    border-radius: 50px; 
+    align-items: center;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* end hero */
+
+/* Medi */
+@media (max-width:1000px) {
+    .toggleMenu{
+        position: absolute;
+        right:5% ;
+        background-image:url(/assets/img/tgg-01.png) ;
+        }
+        .hero-content{
+            flex-direction: column;
+        }
+}
+/* end media */
+
