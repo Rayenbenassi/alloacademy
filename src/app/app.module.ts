@@ -8,18 +8,26 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { FormGroup } from '@angular/forms';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     SignupPageComponent,
-    HomepageComponent
+    HomepageComponent,
+    ForgetPasswordComponent,
+    ResetPasswordComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

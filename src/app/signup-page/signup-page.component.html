@@ -1,1 +1,87 @@
-<p>signup-page works!</p>
+
+<div class="global">
+    
+    <div class="container Regular shadow">
+        <div class="cover"> 
+            <div class="front">
+                <div class="buttonBox " style="position:absolute ; z-index:700;margin-top: 120%; margin-left:60%;">    <button class="btn Register Regular shadow" routerLink="/login"   > Login</button>
+                </div>
+                 <img src="/assets/img/signin-01.png" alt=""> </div> 
+            </div>
+        <form action="" class="form-control" [formGroup]="registerform">
+           <div class="form-content">
+            <div class="login-form">
+                <div class="title" routerLink="">
+                    AlloAcademy TN
+                </div>
+            <div class="input-boxes">
+                <div class="input-box">
+                    <input type="text" placeholder="Phone number or email" formControlName="email" name="uname" ><br>
+                </div>
+                <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['email'].errors " >
+                    username empty !
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder=" First name" formControlName="firstName" name="psw" ><br>
+                </div>
+                    <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['firstName'].errors " >
+                        first name empty !
+                     </div>
+                     <div class="input-box">
+                        <input type="text" placeholder="last name" formControlName="lastName" name="uname" >
+                    </div>
+                    <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['lastName'].errors " >
+                        username empty !
+                    </div>
+                    <div class="input-box">
+                        <input type="date" value="birthday" formControlName="birthday" style="color:rgb(128, 127, 127)" name="uname" ><br>
+                    </div>
+                    <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['birthday'].errors " >
+                        username empty !
+                    </div>
+                    <div class="input-box input-group date ">
+                        <select class="custom-select mr-sm-2" formControlName="class" style="color: rgb(97, 95, 95);"  id="slect">
+                            <option value="javascript">bac sc</option>
+                            <option value="php">bac math</option>
+                            <option value="java">bac info</option>
+                            <option value="golang">bac eco</option>
+                            <option value="python">bac tech</option>
+                            <option value="c#">1 er prepa pc</option>
+                            <option value="C++">1 er prepa mp</option>
+                            <option value="erlang">1 er prepa techno</option>
+                          </select>
+                    </div>
+                    <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['class'].errors " >
+                        Class empty !
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="password" formControlName="email" name="uname" ><br>
+                    </div>
+                    <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['password'].errors " >
+                        password empty !
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="Confirm password" formControlName="ConfirmPassword" name="uname" ><br>
+                    </div>
+                    <div class="alert alert-danger" role="alert" *ngIf=" clicker && f['email'].errors " >
+                        field empty !
+                    </div>
+                    <div class="alert alert-danger" role="alert" *ngIf="registerform.errors?.['valuesDoNotMatch'] " >
+                        Password do not match
+                    </div>
+                    <div class="buttonBox" style="margin-top:10%">    <button class="btn Regular shadow"   (click)="OnSubmitForm()" >Register</button>
+                    </div>
+                    
+            </div>
+            
+            <div class="text hide" style=" margin-left: 13%;">  <a href="">Already have account? <span style="color: #2DA4DD;">Login now</span> </a> 
+             </div>
+           </div>
+        </div>
+        </form>
+        </div>   
+
+
+</div>
+
+ 
